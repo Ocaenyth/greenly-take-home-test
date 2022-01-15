@@ -1,0 +1,1 @@
+export const MAX_DISCOUNT_IN_PERCENT = 50;
