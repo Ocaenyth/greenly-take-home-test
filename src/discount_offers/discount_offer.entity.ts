@@ -10,7 +10,7 @@ export class DiscountOffer {
     public updateOffer() {
         this.applyDiscountPolicy();
         this.applyExpirationPolicy();
-        this.sanitizeOffer();
+        this.sanitize();
     }
 
     protected applyDiscountPolicy() {
@@ -25,7 +25,7 @@ export class DiscountOffer {
         this.expiresIn--;
     }
 
-    private sanitizeOffer() {
+    protected sanitize() {
         this.discountInPercent = Math.max(this.discountInPercent, 0);
         this.discountInPercent = Math.min(this.discountInPercent, MAX_DISCOUNT_IN_PERCENT);
     }

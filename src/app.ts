@@ -23,8 +23,6 @@ for (let elapsedDays = 0; elapsedDays < totalDays; elapsedDays++) {
     }
 }
 
-// TODO: This doesn't print exactly what is expected in `output.txt`, but the 
-// TODO: original json (or txt) is actually invalid so I'll see to that later
 /* eslint-disable no-console */
 fs.writeFile("output.txt", log, err => {
     if (err) {
