@@ -7,7 +7,7 @@ export class DiscountOffer {
         public discountInPercent: number) {
     }
 
-    public updateOffer() {
+    public update() {
         this.applyDiscountPolicy();
         this.applyExpirationPolicy();
         this.sanitize();

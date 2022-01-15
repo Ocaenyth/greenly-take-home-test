@@ -8,10 +8,9 @@ export class Store {
     this.discountOffers = discountOffers;
   }
 
-  // TODO: Unit/integration tests ?
   public updateDiscounts(): DiscountOffer[] {
     for (const offer of this.discountOffers) {
-      offer.updateOffer();
+      offer.update();
     }
     return this.discountOffers;
   }
