@@ -9,7 +9,7 @@ const discountOffers: DiscountOffer[] = [
     discountOfferFactory.makeDiscountOffer("Naturalia", 10, 5),
     discountOfferFactory.makeDiscountOffer("Vinted", 5, 40),
     discountOfferFactory.makeDiscountOffer("Ilek", 15, 40),
-    // discountOfferFactory.makeDiscountOffer("BackMarket", 15, 40),
+    discountOfferFactory.makeDiscountOffer("BackMarket", 15, 40),
 ];
 const store = new Store(discountOffers);
 
