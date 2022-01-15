@@ -1,6 +1,5 @@
 import * as fs from 'fs';
-import { DiscountOffer } from './discount_offers';
-import { DiscountOfferFactory } from './discount_offers/discount_offer.factory';
+import { DiscountOffer, DiscountOfferFactory } from './discount_offers';
 import { Store } from './store';
 
 const discountOfferFactory = new DiscountOfferFactory();
