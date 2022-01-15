@@ -4,7 +4,7 @@
   "repository": "git@github.com:inato/take-home-test.git",
   "author": "greenly",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "dist/app.js",
   "private": true,
   "engines": {
     "yarn": ">=1.7.0",
@@ -12,8 +12,7 @@
   },
   "scripts": {
     "lint": "eslint src",
-    "start": "npx ts-node src/app.ts",
-    "start:dev": "export NODE_ENV=dev && npx ts-node src/app.ts",
+    "start": "npm run build && node dist/app.js",
     "test": "jest --coverage --maxWorkers 5",
     "test-no-cache": "jest --coverage --maxWorkers 5 --no-cache",
     "test-last-commit": "jest --coverage --lastCommit --maxWorkers 5 --no-cache",
