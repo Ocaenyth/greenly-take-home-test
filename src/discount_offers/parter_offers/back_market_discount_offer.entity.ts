@@ -1,6 +1,5 @@
 import { DiscountOffer } from '..';
 
-// TODO: Unit tests
 export class BackMarketDiscountOffer extends DiscountOffer {
     protected applyDiscountPolicy() {
         if (this.expiresIn > 0) {
